@@ -8,8 +8,8 @@
   </title>
 </style>
 </head>
-<body style="padding:0px;">
-<div style="background-color:black; border:3px solid black">
+<body style="margin:0px;">
+<div style="background-color:black; border:3px solid black; padding:8px">
   <script>
     $(document).on('touchmove', false);
   </script>

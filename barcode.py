@@ -31,11 +31,11 @@ try :
 	elif(num[0]!='0'):
 		num = num[0:3]
 
-#	intnum = int(num)
-#	if(intnum%2==1):#odd
-#		num = str((intnum+1)/2)
-#	if(intnum%2==0):#even
-#		num = str(intnum/2)
+	intnum = int(num)
+	if(intnum%2==1):#odd
+		num = str((intnum+1)/2)
+	if(intnum%2==0):#even
+		num = str(intnum/2)
 #
 #	if(len(num)==1):
 #		num = "00" + num
