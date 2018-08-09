@@ -8,7 +8,8 @@
   </title>
 </style>
 </head>
-<body style="padding:0px">
+<body style="padding:0px;">
+<div style="background-color:black; border:3px solid black">
   <script>
     $(document).on('touchmove', false);
   </script>
@@ -18,7 +19,7 @@
     </div>
   </div>
   <div style="text-align:center">
-  <div style="font-size:20px">
+  <div style="font-size:20px; color:white">
   <?php
     echo "<br />\n";
 //    echo "<br />\n";
@@ -36,5 +37,8 @@
     $var= exec("python barcode.py");
     echo "<img src =$var width='100%' height='20%'/>";
   ?>
+  <img src="img_res\Press_Start_Gaming-Blog.gif" width="100%"/>
+<!--  <img src="img_res\retro_games.jpg" width="100%"/>-->
+</div>
 </body>
 </html>
