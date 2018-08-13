@@ -13,7 +13,6 @@ def logdata():
 	data = fd_popen.read().strip()
 	fd_popen.close()
 	return data
-
 strsys = ossystemstring("date")
 try :
 	if (strsys[11:13]=="15"):#midnight initalize
@@ -32,15 +31,12 @@ try :
 	elif(num[0]!='0'):
 		num = num[0:3]
 
-	
-	intnum = int(num)
-
-
+#	intnum = int(num)\
 	if(intnum%2==1):#odd
 		num = str((intnum+1)/2)
 	if(intnum%2==0):#even
 		num = str(intnum/2)
-
+#
 #	if(len(num)==1):
 #		num = "00" + num
 #	if(len(num)==2):
@@ -50,7 +46,7 @@ try :
 
 	bar = "barcode000000000"
 
-	barcode = "scanner/"+bar + num  + ".jpg"
+	barcode = "scanner/"+bar + num + ".jpg"
 	fw=open(barcode,'r')
 
 	print barcode
